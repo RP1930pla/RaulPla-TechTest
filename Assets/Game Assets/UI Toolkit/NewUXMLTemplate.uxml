@@ -1,0 +1,9 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Game%20Assets/UI%20Toolkit/Styles.uss?fileID=7433441132597879392&amp;guid=5b4f9a9956969a147b31d3bfa1caa048&amp;type=3#Styles"/>
+    <ui:VisualElement style="flex-grow: 0; opacity: 1; background-color: rgb(255, 4, 4); width: 100%; height: 194px; min-width: initial; min-height: initial; max-height: initial; max-width: initial; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; -unity-background-scale-mode: stretch-to-fill; flex-shrink: 0; flex-basis: 7%; flex-direction: row; justify-content: space-evenly;">
+        <ui:Button text="Button"/>
+        <ui:Button text="Button" selectable="true" style="width: 10%; background-image: url(&quot;project://database/Assets/Game%20Assets/Art%20Assets/UI%20Sprites/Home%20Screen/SP_Pill.asset?fileID=21300000&amp;guid=db294d98fa1a48e4c97b582c0d184d0a&amp;type=2#SP_Pill&quot;); background-color: rgba(255, 255, 255, 0); -unity-background-scale-mode: scale-to-fit; -unity-slice-left: -11; -unity-slice-top: -11; -unity-slice-right: -11; -unity-slice-bottom: -11; height: 20%; transition-property: all, ignored; transition-duration: 0s, 0s; transition-timing-function: ease, ease; transition-delay: 0s, 0s;">
+            <ui:Image/>
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>
