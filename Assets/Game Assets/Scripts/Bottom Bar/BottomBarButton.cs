@@ -1,4 +1,5 @@
 using DG.Tweening;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using static UnityEditor.FilePathAttribute;
@@ -14,7 +15,7 @@ public class BottomBarButton : MonoBehaviour
     public RectTransform rectTransform;
     public RectTransform childRectTransform;
     public AnimationCurve fadeCurve;
-
+    public TextMeshProUGUI textMesh;
 
 
     public Image image;
@@ -71,6 +72,8 @@ public class BottomBarButton : MonoBehaviour
         rectTransform.DOSizeDelta(new Vector2(0f, 667.457f), 0.3f);
         childRectTransform.DOLocalMoveY(0f, 0.3f);
         image.DOFade(0, 0.3f).SetEase(fadeCurve);
+        textMesh.DOFade(0, 0.3f).SetEase(fadeCurve);
+        textMesh.DOScale(0, 0.3f).SetEase(fadeCurve);
 
         buttonController.CheckForNoContent();
 
@@ -87,6 +90,8 @@ public class BottomBarButton : MonoBehaviour
             rectTransform.DOSizeDelta(new Vector2(946.8f, 667.457f), 0.3f);
             childRectTransform.DOLocalMoveY(190.49f, 0.3f);
             image.DOFade(1, 0.3f).SetEase(fadeCurve);
+            textMesh.DOFade(1,0.3f).SetEase(fadeCurve);
+            textMesh.DOScale(1,0.3f).SetEase(fadeCurve);
             //
 
             buttonController.ContentActivated();
