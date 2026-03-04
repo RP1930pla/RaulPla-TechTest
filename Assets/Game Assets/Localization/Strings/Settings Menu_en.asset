@@ -42,6 +42,18 @@ MonoBehaviour:
     m_Localized: Language
     m_Metadata:
       m_Items: []
+  - m_Id: 319404592107520
+    m_Localized: T&C
+    m_Metadata:
+      m_Items: []
+  - m_Id: 319703541125120
+    m_Localized: Privacy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320819670585344
+    m_Localized: Support
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

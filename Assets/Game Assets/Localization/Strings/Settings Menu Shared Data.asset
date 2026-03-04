@@ -39,6 +39,18 @@ MonoBehaviour:
     m_Key: Language
     m_Metadata:
       m_Items: []
+  - m_Id: 319404592107520
+    m_Key: T&C
+    m_Metadata:
+      m_Items: []
+  - m_Id: 319703541125120
+    m_Key: Privacy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 320819670585344
+    m_Key: Support
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
