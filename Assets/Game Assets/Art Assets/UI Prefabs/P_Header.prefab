@@ -215,7 +215,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 165
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ec2c5ba4b6e504140a61002cfa9f4632, type: 2}
   m_sharedMaterial: {fileID: -3873741578448717050, guid: ec2c5ba4b6e504140a61002cfa9f4632, type: 2}
@@ -242,8 +242,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 78.6
-  m_fontSizeBase: 78.6
+  m_fontSize: 117.5
+  m_fontSizeBase: 117.5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -1077,8 +1077,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 78.6
-  m_fontSizeBase: 78.6
+  m_fontSize: 122.9
+  m_fontSizeBase: 92
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -1387,7 +1387,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 59.86, y: 0}
+  m_AnchoredPosition: {x: 59.859375, y: 0}
   m_SizeDelta: {x: -119.72, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8242103731585962070
@@ -1418,7 +1418,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: 2,850
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: ec2c5ba4b6e504140a61002cfa9f4632, type: 2}
   m_sharedMaterial: {fileID: -3873741578448717050, guid: ec2c5ba4b6e504140a61002cfa9f4632, type: 2}
@@ -1445,8 +1445,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 78.6
-  m_fontSizeBase: 78.6
+  m_fontSize: 122.9
+  m_fontSizeBase: 122.9
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0

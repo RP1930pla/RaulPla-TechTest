@@ -20,6 +20,11 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels: []
     FlaggedDuringContentUpdateRestriction: 0
+  - m_GUID: c7ece3589ccfae142b7f292aaeb8be07
+    m_Address: Assets/Game Assets/Localization/Strings/Level Completion Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: d5a166e31ea1046409d33f350c2653ca
     m_Address: Assets/Game Assets/Localization/Strings/Main Menu Shared Data.asset
     m_ReadOnly: 1
