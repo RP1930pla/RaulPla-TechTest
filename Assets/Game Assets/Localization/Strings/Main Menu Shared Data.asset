@@ -31,6 +31,10 @@ MonoBehaviour:
     m_Key: Full Heart
     m_Metadata:
       m_Items: []
+  - m_Id: 1046777767694336
+    m_Key: Complete Level
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
