@@ -343,11 +343,12 @@ SubShader {
 			//INSERTED CODE TO REVEAL TEXT WITH GLOBAL PARAMETER
 			float2 screenUV = (input.positionCS.xy / input.positionCS.w) * 0.5 + 0.5;
 			// screenUV = screenUV + 0.5;
-			screenUV = Unity_Rotate_Degrees_float(screenUV, half2(0.5,0.5), 30.3);
-			half revealValue = lerp(1.24,-0.3, _Reveal);
+			screenUV = float2(screenUV.x, 1-screenUV.y);
+			half revealValue = lerp(0,1.1, _Reveal);
+			half grad = dot(half2(.5,.5), screenUV);
 
-			half mask = step(revealValue,screenUV.y);
-			half gradient = saturate(1-smoothstep(revealValue, revealValue + 0.1, screenUV.y)) * 0.8;
+			half mask = 1-step(_Reveal,grad);
+			half gradient = smoothstep(revealValue - 0.1, revealValue, grad) * 1;
 			faceColor.rgb = Unity_Blend_Dodge_float4(faceColor.rgba, gradient, 1).rgb;
 			faceColor.a *= mask;
 
