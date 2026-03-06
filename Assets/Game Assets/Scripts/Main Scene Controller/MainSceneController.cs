@@ -1,5 +1,6 @@
 using DG.Tweening;
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -9,23 +10,41 @@ public class MainSceneController : MonoBehaviour
     public RectTransform uiSettingsPopUp;
     public AnimationCurve uiSettingsAnimationCurve;
     public GraphicRaycaster uiMainMenuGraphicRaycaster;
-    public void OpenSettings() 
+
+    public Texture2D screenShot;
+    public RawImage sprite;
+
+
+
+    IEnumerator RecordFrame() 
+    {
+        yield return new WaitForEndOfFrame();
+        var screenTex = ScreenCapture.CaptureScreenshotAsTexture();
+        screenShot = new Texture2D(screenTex.width, screenTex.height, TextureFormat.RGB24, false);
+        screenShot.SetPixels(screenTex.GetPixels());
+        screenShot.Apply();
+        sprite.texture = screenShot;
+
+        Destroy(screenTex);
+        OpenUISettingsPanel();
+    }
+
+    public void OpenUISettingsPanel() 
     {
         uiSettings.SetActive(true);
         uiSettingsPopUp.DOScale(1, 0.2f).SetEase(uiSettingsAnimationCurve);
         uiMainMenuGraphicRaycaster.enabled = false;
     }
 
-    //public void CloseSettings() 
-    //{
-    //    uiSettings.SetActive(true);
-    //    uiSettingsPopUp.DOScale(0.5f, 0.1f).SetEase(uiSettingsAnimationCurve);
-
-    //}
+    public void OpenSettings() 
+    {
+        StartCoroutine(RecordFrame());
+    }
 
     public void ClosePopUp() 
     {
         uiSettings.SetActive(false);
+        Destroy(screenShot);
     }
 
     public void CloseSettings() 
