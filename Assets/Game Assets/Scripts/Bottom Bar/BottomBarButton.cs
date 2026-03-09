@@ -2,7 +2,6 @@ using DG.Tweening;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
-using static UnityEditor.FilePathAttribute;
 
 [RequireComponent(typeof(RectTransform))]
 public class BottomBarButton : MonoBehaviour

@@ -2,7 +2,9 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Rendering;
 using UnityEngine.EventSystems;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using Unity.VisualScripting;
 
 [RequireComponent (typeof(RectTransform))]
@@ -81,6 +83,8 @@ public class TweeningAnimation : MonoBehaviour, IPointerEnterHandler, IPointerEx
     }
 }
 
+#if UNITY_EDITOR
+
 [CustomEditor(typeof(TweeningAnimation))]
 public class TweeningAnimationEditor : Editor 
 {
@@ -118,3 +122,4 @@ public class TweeningAnimationEditor : Editor
         }
     }
 }
+#endif
