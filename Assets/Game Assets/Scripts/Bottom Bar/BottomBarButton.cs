@@ -7,7 +7,6 @@ using static UnityEditor.FilePathAttribute;
 [RequireComponent(typeof(RectTransform))]
 public class BottomBarButton : MonoBehaviour
 {
-    [HideInInspector]
     public bool buttonEnabled = false;
     public bool locked = false;
 
@@ -49,7 +48,7 @@ public class BottomBarButton : MonoBehaviour
     {
         if (buttonEnabled)
         {
-            CloseButton();
+            CloseButton(false);
         }
         else 
         {
@@ -66,7 +65,7 @@ public class BottomBarButton : MonoBehaviour
         sequence.Play();
     }
 
-    public void CloseButton() 
+    public void CloseButton(bool silent) 
     {
         buttonEnabled = false;
         rectTransform.DOSizeDelta(new Vector2(0f, 667.457f), 0.3f);
@@ -75,7 +74,7 @@ public class BottomBarButton : MonoBehaviour
         textMesh.DOFade(0, 0.3f).SetEase(fadeCurve);
         textMesh.DOScale(0, 0.3f).SetEase(fadeCurve);
 
-        buttonController.CheckForNoContent();
+        if (!silent)buttonController.CheckForNoContent();
 
     }
 
@@ -83,7 +82,7 @@ public class BottomBarButton : MonoBehaviour
     {
         if (locked == false)
         {
-            buttonController.CloseOtherEnabledButtons();
+            buttonController.CloseOtherEnabledButtons(true);
             buttonEnabled = true;
 
             //Do Tweening Stuff
