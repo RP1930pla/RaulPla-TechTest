@@ -177,6 +177,7 @@ GameObject:
   - component: {fileID: 2040932947309873228}
   - component: {fileID: 1345498626911237737}
   - component: {fileID: 6648476615767820333}
+  - component: {fileID: 3047392636903474451}
   m_Layer: 5
   m_Name: B_Complete_Level
   m_TagString: Untagged
@@ -298,6 +299,73 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &3047392636903474451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2546428678197109172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dabf565e17e055645bfd1fb0fd5eff6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TweeningAnimation
+  rectTransform: {fileID: 5652958723065892357}
+  mode: 0
+  uniformScaleCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  uniformInitialScale: 1
+  uniformEndScale: 1.05
+  uniformScaleDuration: 0.5
+  rotation: 20
+  timePerRotation: 0.1
+  rotationCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 1
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 1
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &4022894979510696838
 GameObject:
   m_ObjectHideFlags: 0
@@ -718,6 +786,18 @@ PrefabInstance:
     - target: {fileID: 4320221104527575422, guid: 70b3156b14743fa478c3685bc4aaa92e, type: 3}
       propertyPath: m_fontSize
       value: 113.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547523832871838811, guid: 70b3156b14743fa478c3685bc4aaa92e, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.b
+      value: 0.8396226
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547523832871838811, guid: 70b3156b14743fa478c3685bc4aaa92e, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.g
+      value: 0.8396226
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547523832871838811, guid: 70b3156b14743fa478c3685bc4aaa92e, type: 3}
+      propertyPath: m_Colors.m_HighlightedColor.r
+      value: 0.8396226
       objectReference: {fileID: 0}
     - target: {fileID: 4578078357977710961, guid: 70b3156b14743fa478c3685bc4aaa92e, type: 3}
       propertyPath: m_Pivot.x
