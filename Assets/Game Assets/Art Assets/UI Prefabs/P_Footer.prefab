@@ -257,6 +257,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb5b4be65b9cf59408479ed9840a9720, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BottomBarView
+  buttons: []
   buttonBarRectTrans: {fileID: 4578078357977710961}
   animationCurve:
     serializedVersion: 2
@@ -554,6 +555,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: B_Map
       objectReference: {fileID: 0}
+    - target: {fileID: 7636819571751870487, guid: 0d96eb2fdb7a89f4886737774121b013, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 284
+      objectReference: {fileID: 0}
     - target: {fileID: 8086399675551566839, guid: 0d96eb2fdb7a89f4886737774121b013, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -667,6 +672,10 @@ PrefabInstance:
     - target: {fileID: 6382027205023019720, guid: 0d96eb2fdb7a89f4886737774121b013, type: 3}
       propertyPath: m_Name
       value: B_Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 7636819571751870487, guid: 0d96eb2fdb7a89f4886737774121b013, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 361.3
       objectReference: {fileID: 0}
     - target: {fileID: 8086399675551566839, guid: 0d96eb2fdb7a89f4886737774121b013, type: 3}
       propertyPath: m_Pivot.x
@@ -786,6 +795,10 @@ PrefabInstance:
       propertyPath: childRectTransform
       value: 
       objectReference: {fileID: 8824969792375469232}
+    - target: {fileID: 7636819571751870487, guid: 0d96eb2fdb7a89f4886737774121b013, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 337.4
+      objectReference: {fileID: 0}
     - target: {fileID: 8086399675551566839, guid: 0d96eb2fdb7a89f4886737774121b013, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -908,6 +921,10 @@ PrefabInstance:
     - target: {fileID: 6382027205023019720, guid: 0d96eb2fdb7a89f4886737774121b013, type: 3}
       propertyPath: m_Name
       value: B_Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 7636819571751870487, guid: 0d96eb2fdb7a89f4886737774121b013, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 284
       objectReference: {fileID: 0}
     - target: {fileID: 8086399675551566839, guid: 0d96eb2fdb7a89f4886737774121b013, type: 3}
       propertyPath: m_Pivot.x

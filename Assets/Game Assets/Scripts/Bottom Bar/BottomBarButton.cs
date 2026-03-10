@@ -87,6 +87,11 @@ public class BottomBarButton : MonoBehaviour
             //Do Tweening Stuff
             rectTransform.DOSizeDelta(new Vector2(946.8f, 667.457f), 0.3f);
             childRectTransform.DOLocalMoveY(190.49f, 0.3f);
+
+            DG.Tweening.Sequence sequence = DOTween.Sequence();
+            sequence.Append(childRectTransform.DOPunchScale(Vector3.one * 0.1f, 0.5f, 5, 2));
+            sequence.Play();
+
             image.DOFade(1, 0.3f).SetEase(fadeCurve);
             textMesh.DOFade(1,0.3f).SetEase(fadeCurve);
             textMesh.DOScale(1,0.3f).SetEase(fadeCurve);
